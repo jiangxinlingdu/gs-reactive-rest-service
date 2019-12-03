@@ -9,6 +9,9 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
 
 @Component
+/**
+ * 基于WebFlux的请求处理组件
+ */
 public class GreetingHandler {
 
 	public Mono<ServerResponse> hello(ServerRequest request) {

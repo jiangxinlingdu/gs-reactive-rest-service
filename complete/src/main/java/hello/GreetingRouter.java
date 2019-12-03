@@ -9,6 +9,9 @@ import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;
 
 @Configuration
+/**
+ * 路由配置,配置URL pattern 和请求处理组件 GreetingHandler 的映射关系
+ */
 public class GreetingRouter {
 
 	@Bean
