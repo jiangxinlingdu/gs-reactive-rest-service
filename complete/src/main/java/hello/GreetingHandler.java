@@ -8,14 +8,18 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 
 import reactor.core.publisher.Mono;
 
-@Component
 /**
  * 基于WebFlux的请求处理组件
  */
+@Component
 public class GreetingHandler {
 
 	public Mono<ServerResponse> hello(ServerRequest request) {
 		return ServerResponse.ok().contentType(MediaType.TEXT_PLAIN)
-			.body(BodyInserters.fromObject("Hello, Spring!"));
+				.body(BodyInserters.fromObject("Hello, Spring!"));
 	}
 }
+
+
+
+
